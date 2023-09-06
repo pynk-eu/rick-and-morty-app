@@ -1,5 +1,10 @@
 .search-bar-container {
-  width: 300px;
+  width: 100%;
+  margin: auto;
+  position: sticky;
+  top: 0;
+  padding: 8px 0;
+  background-color: white;
 }
 
 .search-bar {
@@ -7,6 +12,8 @@
   background-color: var(--color-secondary);
   display: grid;
   grid-template-columns: 1fr 24px;
+  width: 300px;
+  margin: auto;
 }
 
 .search-bar__input {
