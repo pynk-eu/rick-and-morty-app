@@ -24,6 +24,8 @@ const fetchCharacters = async (pageNumber = 1, searchQuery = "") => {
 
     maxPage = charactersData.info.pages;
     pagination.textContent = `${pageNumber} / ${maxPage}`;
+
+    determinePaginationButtonsState(pageNumber, maxPage);
   } catch (error) {
     console.log(error);
     cardContainer.innerHTML = `<p class="error-message">Sorry, character with name "${searchQuery}" not found!</p>`;
@@ -31,8 +33,16 @@ const fetchCharacters = async (pageNumber = 1, searchQuery = "") => {
 };
 
 const determinePaginationButtonsState = (currentPage, maxPage) => {
-  if (currentPage === 1) prevButton.disabled = true;
-  if (currentPage === maxPage) nextButton.disabled = true;
+  if (currentPage === 1) {
+    prevButton.disabled = true;
+  } else {
+    prevButton.disabled = false;
+  }
+  if (currentPage === maxPage) {
+    nextButton.disabled = true;
+  } else {
+    nextButton.disabled = false;
+  }
 };
 
 prevButton.addEventListener("click", () => {
