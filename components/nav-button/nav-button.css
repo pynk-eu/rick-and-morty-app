@@ -6,7 +6,10 @@
 }
 
 .button:hover {
-   transform: translate(-2px, -2px);
-   box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
+}
 
+.button:disabled {
+  background-color: rgb(239 231 194);
 }
