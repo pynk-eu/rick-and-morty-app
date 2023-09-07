@@ -33,5 +33,5 @@ main {
 }
 .error-message {
   text-align: center;
-  margin: 128px 0 0 0;
+  margin: 128px auto 0;
 }
