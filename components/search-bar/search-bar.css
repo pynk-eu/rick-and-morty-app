@@ -10,10 +10,10 @@
 
 .search-bar {
   padding: 10px 20px;
-  background-color: var(--color-secondary);
+  background-color: rgb(233, 250, 233);
   display: grid;
   grid-template-columns: 1fr 24px;
-  width: 300px;
+  width: 600px;
   margin: auto;
 }
 
