@@ -1,6 +1,6 @@
 export function createCharacterCard(character) {
   return `
-    <li class="card">
+    <li class="card" data-js="card">
           <div class="card__image-container">
             <img
               class="card__image"

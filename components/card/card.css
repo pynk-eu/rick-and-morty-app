@@ -24,11 +24,10 @@
   height: auto;
 }
 
-.card:hover .card__content {
+.card.m-show .card__content {
   padding: 10px 20px 20px;
   opacity: 1;
 }
-
 .card__info {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -55,4 +54,3 @@ li {
 .card__image {
   border-radius: 16px 16px 0 0;
 }
-

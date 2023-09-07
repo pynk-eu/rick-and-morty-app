@@ -58,4 +58,11 @@ searchBar.addEventListener("submit", (event) => {
   fetchCharacters(page, searchQuery);
 });
 
+document.addEventListener("click", (event) => {
+  const card = event.target.closest('[data-js="card"]');
+  if (card) {
+    card.classList.toggle("m-show");
+  }
+});
+
 fetchCharacters();
