@@ -13,7 +13,7 @@
   background-color: rgb(233, 250, 233);
   display: grid;
   grid-template-columns: 1fr 24px;
-  width: 600px;
+  max-width:600px;
   margin: auto;
 }
 
