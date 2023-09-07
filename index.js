@@ -26,6 +26,7 @@ const fetchCharacters = async (pageNumber = 1, searchQuery = "") => {
     pagination.textContent = `${pageNumber} / ${maxPage}`;
   } catch (error) {
     console.log(error);
+    cardContainer.innerHTML = `<p class="error-message">Sorry, character with name "${searchQuery}" not found!</p>`;
   }
 };
 
